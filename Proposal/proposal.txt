@@ -11,5 +11,9 @@ It is also necessary to ensure that the various levels of moderation are working
 A system can be said to be successfull only if it suffices for the need of the users. To measure the popularity of the content among the users, a mathematical measure called Popularity Index is determined based on the lifetime of a content viz-a-viz whether people are listening to the content or skipping it etc. Then while publishing, the content which has high popularity index is preferrd over the one with less popularity index. This system provides moderated unbiased content to the user based on their preferrence.
 
 OBJECTIVE:
+
 APPROACH:
+
+The overall approach is to provide the content recored by the user group over IVR to the community representatives (voluenteers) who pass the relevant audios to the content moderators. These content moderators do the selection and ranking of the content based on various factors such as biasedness of the content, it's political impact etc. The overall ranking of the content is determined with the help on a ranking algorithm. Then the content finally been published is available to the user on demand. Then based on the lifetime of the content, a mathematical measure called Popularity Index of content is determined through which the community representatives get to know the need of user group and then refine the content accordingly. To ensure the efficient working of the volunteers, they are given scores based on their work which in turn determines the incentive that they get for their work.
+
 REFERENCE:
