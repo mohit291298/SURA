@@ -1,4 +1,7 @@
 INTRODUCTION:
+
+History proves that right from the starting of the time, Media had played an important role in influencing various sort of social, economical and political phenomenons in societies. It has led to union and division of society into various groups based on their opinions on different topics. It has led to many revolutionary movements through the masses. But some important question which arises are "Are all these news true?", "Can media even influence us to act opposite to our opinion?". Everyday we come accross various fake news in various unmoderated social media like Facebook and Twitter which leads to formation of various echo chambers. These tend to make false image of people and groups among the society. But moderated social media which tries to ensure that the information is credible and that it is presented with diverse viewpoints being covered, is hard to scale. This project aims to decentralize the moderation process so that it is easier to ensure the correctness and unbiasedness of the news been delivered. 
+
 OBJECTIVE:
 APPROACH:
 REFERENCE:
