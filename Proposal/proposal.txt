@@ -16,4 +16,31 @@ APPROACH:
 
 The overall approach is to provide the content recored by the user group over IVR to the community representatives (voluenteers) who pass the relevant audios to the content moderators. These content moderators do the selection and ranking of the content based on various factors such as biasedness of the content, it's political impact etc. The overall ranking of the content is determined with the help on a ranking algorithm. Then the content finally been published is available to the user on demand. Then based on the lifetime of the content, a mathematical measure called Popularity Index of content is determined through which the community representatives get to know the need of user group and then refine the content accordingly. To ensure the efficient working of the volunteers, they are given scores based on their work which in turn determines the incentive that they get for their work.
 
+The steps involved in the process are:
+
+-> Collection of Content
+
+We use an IVR (Interactive Voice Response) to get audio content from the user group. Interactive Voice Response (IVR) is an automated telephony system that interacts with callers, gathers information and routes calls to the appropriate recipient. The user gives a missed call to a number and the the computer calls back the user asap and then the user can speak about the content and the system records it.
+
+-> Moderation of Content
+
+The process of moderation is decentralized in order to make it's working more efficient. It consists of two lavels of decentralizartion - Community Representatives (Volunteers) and Content Moderators.
+
+--> Moderation by Community Representatives
+
+As soon as the audio file is recorded over IVR, all the community representatives (volunteers) receive a notification about the content in their phone and any of them can listen to it. The volunteers check if the audio file is empty or is it of very poor quality or if it's to abusive or politically motivated. Based on these, they pass only the relevant contents to the next level of decentralization i.e. content moderators.
+
+--> Moderation by Content Moderators
+
+Moderator looks at the contents passed on by community representatives. They basically perform following two tasks namely - selection of content and ranking of content. They do the selection based on various factors such as biasedness of the content, it's political impact etc. Accordingly they reject the contents that are not suitable to be published. Then among the contents which are to be published, they rank them based on their understanding. The overall ranking of the content is determined with the help on a ranking algorithm which takes into account the ranks given to a content by each content moderator. 
+
+-> Publishing Content
+
+The content which passed the moderation test are published in order of their ranking. The user can listen to content on demand, according to their preference. The user response i.e. wheteher a user listens to or skip a content is recorded and this information is used in the next step (Popularity Index).
+
+-> Content Popularity Index
+
+Based on the information of lifetime of the content viz-a-viz whether people are listening to the content or skipping it etc, a mathematical measure of popularity of content called Popularity Index is calculated. Based on the measure of polularity indices of contents of a particular topics, volunteers determine wheteher user likes to listen about the topic or not. This helps to get the information about the demands of user group and suggests volunteers to prefer contents on certain topics over the others.
+
+
 REFERENCE:
