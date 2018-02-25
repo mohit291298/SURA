@@ -12,6 +12,8 @@ A system can be said to be successfull only if it suffices for the need of the u
 
 OBJECTIVE:
 
+
+
 APPROACH:
 
 The overall approach is to provide the content recored by the user group over IVR to the community representatives (voluenteers) who pass the relevant audios to the content moderators. These content moderators do the selection and ranking of the content based on various factors such as biasedness of the content, it's political impact etc. The overall ranking of the content is determined with the help on a ranking algorithm. Then the content finally been published is available to the user on demand. Then based on the lifetime of the content, a mathematical measure called Popularity Index of content is determined through which the community representatives get to know the need of user group and then refine the content accordingly. To ensure the efficient working of the volunteers, they are given scores based on their work which in turn determines the incentive that they get for their work.
@@ -42,5 +44,9 @@ The content which passed the moderation test are published in order of their ran
 
 Based on the information of lifetime of the content viz-a-viz whether people are listening to the content or skipping it etc, a mathematical measure of popularity of content called Popularity Index is calculated. Based on the measure of polularity indices of contents of a particular topics, volunteers determine wheteher user likes to listen about the topic or not. This helps to get the information about the demands of user group and suggests volunteers to prefer contents on certain topics over the others.
 
+-> Scoring System for Volunteers
+
+It might happen that volunteers don't work efficiently and just randomly passes the content to content moderators. In order to check this, sometimes randomly some contents are sent both to volunteers and content moderators. If the decision of a volunteer about a content is same as the decision taken by the moderator, his/her score increases or else the score decreases. This is done with the help of a scoring algoritm. This score inturn decides the incentive that the volunteer gets for his/her work. So, in order to increase his/her incentive, the volunteer will try to increase his/her score and hence will work more efficiently.
 
 REFERENCE:
+
