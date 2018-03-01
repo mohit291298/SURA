@@ -61,13 +61,7 @@
 	\newpage
 
 	\section{Introduction}
-	Citizen sourced journalism is an important medium of expression
-    for people, especially in rural India, who are often kept out of discussions regarding
-    issues faced by them. With increasingly improved technology and the penetration
-    of mobile phones, giving people lot of computation power in their hands, the medium of the contribution of stories by the users is no longer limited to just text-based. People can also
-    now contribute audios, videos, and photos to support their stories. But the underlying
-    fact remains that whatever the degree of participation, and whatever the medium, there
-    is a strong need of screening the contributed items, identifying the topics of discussion and grouping based on the same before they can be published. This is necessary to maintain the quality of the news of being reported, the decisions being carried out and take into account the sensitivities of various parties.
+	History proves that right from the starting of the time, Media had played an important role in influencing various sort of social, economical and political phenomenons in societies. It has led to union and division of society into various groups based on their opinions on different topics. It has led to many revolutionary movements through the masses. But some important question which arises are "Are all these news true?", "Can media even influence us to act opposite to our opinion?". Everyday we come accross various fake news in various unmoderated social media like Facebook and Twitter which leads to formation of various echo chambers. These tend to make false image of people and groups among the society. But moderated social media which tries to ensure that the information is credible and that it is presented with diverse viewpoints being covered, is hard to scale. This project aims to decentralize the moderation process so that it is easier to ensure the correctness and unbiasedness of the news been delivered. 
     \newline
     
     \begin{figure}
@@ -78,24 +72,13 @@
     \end{figure}
     
     
-    Our app is built around the Mobile-Based Community Platforms. Take for example a platform which uses the common “missed call” concept where users place a call to a phone number and the server cuts the call and calls them back, thus making the system free of cost for the users. The IVR presents options to record voice messages in Hindi and English they want to share. A wide variety of topics can be featured on this app, including hyperlocal news, job openings, agriculture advisory, social issues such as early marriage and domestic violence, health Q&A, governance and accountability, folk songs and poems, and local and national level advertisements. The bulk of the content on the platform is user-generated with recordings contributed by the IVR itself and subsequently moderated and
-    curated by the content team for publication on the IVR.\newline
-    
-    
-    As the number of stories contributed by people rises, the need for moderation can turn
-    into a bottleneck for scaling such platforms. It is important to ensure that the items
-    worth publishing are accessible by other people soon after they are recorded. Our app
-    aims to solve this problem by easing the task of the content moderation. In this scheme, moderation is done at two levels: first by community representatives with the help of the smart-phone app and second, by a central team of dedicated moderators. Different responsibilities are split across the two levels, as explained later.\newline
-    
-    
-    According to surveys, in most of these current platforms, for more than 70\% of the rejected messages, the main reason for rejection is poor audio quality. Other messages get rejected because the report is not articulate enough, or it is incomplete, and only 1.5\% messages are rejected because the content is objectionable or incorrect. Our app also aims at addressing these problems. The MV content moderators are presented with this app which takes in all the recorded audios and categorizes each audio based on its quality by comparing it with a minimum threshold. This app then tries to enhance the poor-quality audios, and the ones who can’t be processed further are discarded. The app also has an abusive filter which follows advanced editorial policies to ensure that abusive words and statements are removed from content.\newline
-    
-    
-    Currently, all that the community reporter sees is a long list of audios coming from the IVR. We also aim to add certain features to our app by which the stories contributed by the community reporter are better organized and hence aid him to follow-up on the issue much more effectively. Data and information in such an organized form can then also be shown to various concerned authorities, hence making the voices of the people to be heard where they need to be and improve chances
-    of a resulting impact.\newline
-    
-    
-    The app associates tags based on the broad topic/theme the audio belong to and thus organizes the data based on these tags. These tags help grouping similar kind of data and thus, a particular moderator specialized in that topic can go for the second level of screening of the same.
+    This model consists of a community based news platform the news is collected through different user groups who record their audio over IVR. Before this audio is published, it is made sure that it is free of various issues viz-a-viz it is not abusive, it is not politically motivated etc. This working is made efficient using two levels of decentralization of moderation namely - community representatives (volunteers) and content moderators.
+
+Community representatives forms the first level of decentralization which is closest to the user group. They listen to the audios recorded over IVR and then pass the relevenat content to the moderator. Then the content moderators, who form the second layer of decentralization, check the content for the political and social biasedness which is procedure for the selection of content, and then they rank the content based on it's importance and relevance. Then the overall ranking of content is determined by a ranking algoritm.
+
+It is also necessary to ensure that the various levels of moderation are working efficiently. Our ground truth for the correctness of the decision taken by volunteers is based on the decision taken by the moderators for the same content. Based on this, the volunteers are provided scores based on a scoring algorithm. These scores play an important role in determining the incentives of the volunteers. So, to get better incentives, the volunteers will try to increase their score and in turn work properly. This will increase the efficiency of our system.
+
+A system can be said to be successfull only if it suffices for the need of the users. To measure the popularity of the content among the users, a mathematical measure called Popularity Index is determined based on the lifetime of a content viz-a-viz whether people are listening to the content or skipping it etc. Then while publishing, the content which has high popularity index is preferrd over the one with less popularity index. This system provides moderated unbiased content to the user based on their preferrence.
     
 
 	\section{Objectives}
@@ -119,49 +102,53 @@ The app aims to satisfy the need of automatic content moderation in various Comm
 
 \pagebreak
 \section{Approach to the project}
-    The basic purpose of the app is to provide the users with the moderated content by decentralizing the moderation and providing tools to community representatives (volunteers) to address the two decision point i.e. \textbf{``Selection of Content``} and \textbf{``Ranking of content``}\\
-    \bigskip
-    When an audio recorder by someone using IVR, it goes though audio enhancement process.\\
-    As the audio is enhanced, all the moderators and community reporters get a notification about it and they can mark it as accepted or rejected. The moderator's response will help us to rank the content using a ranking mechanism. Then after publishing the audio, we also keep a track on it's popularity among users so as to make our system efficient in providing the users with the content that they want to listen.
+    The overall approach is to provide the content recored by the user group over IVR to the community representatives (voluenteers) who pass the relevant audios to the content moderators. These content moderators do the selection and ranking of the content based on various factors such as biasedness of the content, it's political impact etc. The overall ranking of the content is determined with the help on a ranking algorithm. Then the content finally been published is available to the user on demand. Then based on the lifetime of the content, a mathematical measure called Popularity Index of content is determined through which the community representatives get to know the need of user group and then refine the content accordingly. To ensure the efficient working of the volunteers, they are given scores based on their work which in turn determines the incentive that they get for their work.
 
         \begin{itemize}
-			\item Audio Enhancement
+			\item Collection of Content
+
+
+			We use an IVR (Interactive Voice Response) to get audio content from the user group. Interactive Voice Response (IVR) is an automated telephony system that interacts with callers, gathers information and routes calls to the appropriate recipient. The user gives a missed call to a number and the the computer calls back the user asap and then the user can speak about the content and the system records it.
+
+
+			\item Moderation of Content
+
+
+			The process of moderation is decentralized in order to make it's working more efficient. It consists of two lavels of decentralizartion - Community Representatives (Volunteers) and Content Moderators.
+
+
 			\begin{enumerate}
-				\item
-					We will use digital sampling to reconstruct the audio as much as possible.
-				\item
-					We sample at least twice as fast as the highest frequency we want to record so that we can use Nyquist theorem perfectly reconstruct the original sound wave from the spaced-out samples.				
+				\item Moderation by Community Representatives
+
+
+			As soon as the audio file is recorded over IVR, all the community representatives (volunteers) receive a notification about the content in their phone and any of them can listen to it. The volunteers check if the audio file is empty or is it of very poor quality or if it's to abusive or politically motivated. Based on these, they pass only the relevant contents to the next level of decentralization i.e. content moderators.
+
+
+				\item Moderation by Content Moderators
+
+
+			Moderator looks at the contents passed on by community representatives. They basically perform following two tasks namely - selection of content and ranking of content. They do the selection based on various factors such as biasedness of the content, it's political impact etc. Accordingly they reject the contents that are not suitable to be published. Then among the contents which are to be published, they rank them based on their understanding. The overall ranking of the content is determined with the help on a ranking algorithm which takes into account the ranks given to a content by each content moderator. 
 			\end{enumerate}
-			\item Abuse filtering
-			\begin{enumerate}
-				\item
-					The user is asked to choose one of the provided languages so that it helps us to use a pre-trained neural network to convert audio to text.
-                \item
-					We will be using APIs like Watson speech to text or Google speech aip for converting the audio to text.
-				\item
-					Depending on the abusive words in the language, we segregate the audios into abusive tolerable or abusive intolerable.
-			\end{enumerate}
-			\item Hash-tag Assignment
-			\begin{enumerate}
-				\item
-					We use "one vs all" multi-class classifier neural network for the purpose of hash-tag assignment and topic assignment to the audio.
-                \item
-					This will help user to search for the topics that they want to listen.
-			\end{enumerate}
-			\item Popularity Index of Audio among Users
-			\begin{enumerate}
-				\item
-					We use an algorithm to provide indicators to the volunteers about how the content is doing, ie. after it was published, are people listening to it or skipping it.
-                \item
-					This will help volunteers to understand the taste of user and provide them with the contents that they want to listen.
-			\end{enumerate}
-			\item Further Possibilities
-			\begin{enumerate}
-				\item
-				    We will be training on more languages to accommodate linguistic diversity prominently in rural areas
-				\item
-				    Apart from the app for content moderators, we may also build an app for users so that they can get news on demand as per their preferences.
-			\end{enumerate}
+
+
+			\item Publishing Content
+
+
+			The content which passed the moderation test are published in order of their ranking. The user can listen to content on demand, according to their preference. The user response i.e. wheteher a user listens to or skip a content is recorded and this information is used in the next step (Popularity Index).
+
+
+			\item Content Popularity Index
+
+
+			Based on the information of lifetime of the content viz-a-viz whether people are listening to the content or skipping it etc, a mathematical measure of popularity of content called Popularity Index is calculated. Based on the measure of polularity indices of contents of a particular topics, volunteers determine wheteher user likes to listen about the topic or not. This helps to get the information about the demands of user group and suggests volunteers to prefer contents on certain topics over the others.
+
+
+			\item Scoring System for Volunteers
+
+
+			It might happen that volunteers don't work efficiently and just randomly passes the content to content moderators. In order to check this, sometimes randomly some contents are sent both to volunteers and content moderators. If the decision of a volunteer about a content is same as the decision taken by the moderator, his/her score increases or else the score decreases. This is done with the help of a scoring algoritm. This score inturn decides the incentive that the volunteer gets for his/her work. So, in order to increase his/her incentive, the volunteer will try to increase his/her score and hence will work more efficiently.
+
+
 		\end{itemize}
 
 
