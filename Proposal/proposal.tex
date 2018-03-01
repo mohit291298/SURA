@@ -17,7 +17,7 @@
   \end{tabular}
 }
 
-\title{\vspace*{\fill} \textbf{Audio Description and Content Moderation App}
+\title{\vspace*{\fill} \textbf{Towards Decentralized Moderation of Community Media Content}
 	  \\ {\large \textbf{Summer Undergraduate Research Award}}
 	  \\  \vspace{3mm} \includegraphics[width=5cm]{logo.jpg}}
 
@@ -61,17 +61,22 @@
 	\newpage
 
 	\section{Introduction}
+<<<<<<< HEAD
 	History proves that right from the starting of the time, Media had played an important role in influencing various sort of social, economical and political phenomenons in societies. It has led to union and division of society into various groups based on their opinions on different topics. It has led to many revolutionary movements through the masses. But some important question which arises are "Are all these news true?", "Can media even influence us to act opposite to our opinion?". Everyday we come accross various fake news in various unmoderated social media like Facebook and Twitter which leads to formation of various echo chambers. These tend to make false image of people and groups among the society. But moderated social media which tries to ensure that the information is credible and that it is presented with diverse viewpoints being covered, is hard to scale. This project aims to decentralize the moderation process so that it is easier to ensure the correctness and unbiasedness of the news been delivered. 
+=======
+	History proves that right from the starting of the time, Media had played an important role in influencing various sort of social, economical and political phenomenons in societies. It has led to union and division of society into various groups based on their opinions on different topics. It has led to many revolutionary movements through the masses. But some important question which arises are "Are all these news true?", "Can media even influence us to act opposite to our opinion?". Everyday we come across various fake news in various unmoderated social media like Facebook and Twitter which leads to formation of various echo chambers. These tend to make false images of people and groups among the society. But, moderated social media which tries to ensure that the information is credible and that it is presented with diverse viewpoints being covered, is hard to scale. This project aims to decentralize the moderation process so that it is easier to ensure the correctness and unbiasedness of the news been delivered. 
+>>>>>>> 32a1f8532a8b90c0cc9e7093be2a5772a7a079f0
     \newline
     
-    \begin{figure}
-        \centering
-        \includegraphics[width=15cm]{intro.png}
-        \caption{Who knows your Media \textit{(cited from: newslaundry.com)}}
-        \label{fig:media}
-    \end{figure}
+    % \begin{figure}
+    %     \centering
+    %     \includegraphics[width=15cm]{intro.png}
+    %     \caption{Who knows your Media \textit{(cited from: newslaundry.com)}}
+    %     \label{fig:media}
+    % \end{figure}
     
     
+<<<<<<< HEAD
     This model consists of a community based news platform the news is collected through different user groups who record their audio over IVR. Before this audio is published, it is made sure that it is free of various issues viz-a-viz it is not abusive, it is not politically motivated etc. This working is made efficient using two levels of decentralization of moderation namely - community representatives (volunteers) and content moderators.
 
 Community representatives forms the first level of decentralization which is closest to the user group. They listen to the audios recorded over IVR and then pass the relevenat content to the moderator. Then the content moderators, who form the second layer of decentralization, check the content for the political and social biasedness which is procedure for the selection of content, and then they rank the content based on it's importance and relevance. Then the overall ranking of content is determined by a ranking algoritm.
@@ -79,42 +84,93 @@ Community representatives forms the first level of decentralization which is clo
 It is also necessary to ensure that the various levels of moderation are working efficiently. Our ground truth for the correctness of the decision taken by volunteers is based on the decision taken by the moderators for the same content. Based on this, the volunteers are provided scores based on a scoring algorithm. These scores play an important role in determining the incentives of the volunteers. So, to get better incentives, the volunteers will try to increase their score and in turn work properly. This will increase the efficiency of our system.
 
 A system can be said to be successfull only if it suffices for the need of the users. To measure the popularity of the content among the users, a mathematical measure called Popularity Index is determined based on the lifetime of a content viz-a-viz whether people are listening to the content or skipping it etc. Then while publishing, the content which has high popularity index is preferrd over the one with less popularity index. This system provides moderated unbiased content to the user based on their preferrence.
+=======
+    This model consists of a community based news platform where the news is collected through different user groups who record their audio over IVR(Interactive Voice Response) systems. Before this audio is published, it is made sure that it is free of various issues viz-a-viz it is not abusive, it is not politically motivated etc. This working is made efficient using two levels of decentralization of moderation namely - community representatives (volunteers) and content moderators.\newline
+>>>>>>> 32a1f8532a8b90c0cc9e7093be2a5772a7a079f0
     
 
-	\section{Objectives}
-	Design, build and validate an app to moderate and curate the voice messages recorded on IVR (Interactive Voice Response) systems incorporated in Mobile-Based Community Platforms.
+Community representatives forms the first level of decentralization which is closest to the user group. They listen to the audios recorded over IVR and then pass the relevant content to the moderator. Then the content moderators, who form the second layer of decentralization, check the content for any political and social biasedness which is procedure for the selection of content, and then they rank the content based on it's importance and relevance. Then the overall ranking of content is determined by a ranking algorithm.\newline
 
-    The main objectives of the app is to to decentralize two decision points:
+
+It is also necessary to ensure that the various levels of moderation are working efficiently. Our ground truth for the correctness of the decision taken by volunteers is based on the decision taken by the moderators for the same content. Based on this, the volunteers are provided scores based on a scoring algorithm. These scores play an important role in determining the incentives of the volunteers. So, to get better incentives, the volunteers will try to increase their score and in turn work properly. This will increase the efficiency of our system.\newline
+
+
+A system can be said to be successful only if it suffices for the need of the users. To measure the popularity of the content among the users, a mathematical measure called Popularity Index is determined based on the lifetime of a content viz-a-viz whether people are listening to the content or skipping it etc. Then while publishing, the content which has high popularity index is preferred over the one with less popularity index. This system provides moderated unbiased content to the user based on their preference.\newline
+
+
+We also aim to add certain features to our app by which the stories contributed by
+the community reporter are better organized and hence aid him to follow-up on the issue much more effectively. Data and information in such an organized form can then also be shown to various concerned authorities, hence making the voices of the people to be heard where they need to be and improve chances of a resulting impact. These tags help grouping similar kind of data and thus, a particular moderator specialized in that topic can go for the second level of screening of the same.\newline
+
+
+This project focuses on \textbf{Building election algorithms to solve the two problems of \textit{content selection} and \textit{content ranking}. From an optimization point of view, how many ratings per content should we get? How can we calculate the reputation of the volunteers in giving good scores?}
+   
+
+	\section{Objectives}
+	Our main objective in this project is to design, build and validate an app to moderate and curate the voice messages recorded on IVR (Interactive Voice Response) systems incorporated in Mobile-Based Community Platforms.
+
+    The main objectives of the app is to to decentralize four decision points:
      \begin{itemize}
 				\item
-				        Selection of content
+				        \textbf{Selection of content: } The app focuses on the "editorial problem" of selection of content to make sure that it is not abusive, it is not politically motivated, etc and the information is complete. Before the audio is published at any Mobile-based community platform, we aim to make it sure that it is free of various issues viz-a-viz it is not abusive, it is not politically motivated, abusive, motivated by rumours etc. We need to improvise a method to handle the situations when multiple stakeholders participate and provide views on a given topic, and make the message becomes more complete in terms of its coverage of different aspects.
 				\item
-				        Ranking of content
+				        \textbf{Ranking of content: } Through this model, the content moderators can easily rank the content based on it’s importance and relevance. The overall ranking of content is then determined by a ranking algorithm.
+				        
+				\item  \textbf{Content Popularity Index: } An important task in any media based platform is to measure the popularity of their content among the users and simultaneously incorporate necessary changes to increase the same. The app will also provide indicators to the volunteers of the responses of the content by users i.e. after it was published, are people listening to it or skipping it. If a lot of people are skipping it then the volunteers should look more deeply into it, or the moderators can be consulted to investigate, and take corrective steps.
+				\item \textbf{Organizing the bulk of data: } We  also  aim  to  add  certain  features  to  our  app  by  which  the  stories  contributed  by the community reporter are better organized and hence aid him to follow-up on the issue much more effectively.
 			\end{itemize}
-The app focuses on the "editorial problem" of selection of content to make sure that it is not abusive, it is not politically motivated, etc, and on how to rank the content.
-\bigskip
 
-The app will also provide indicators to the volunteers of the content is doing, i.e. after it was published, are people listening to it or skipping it. If a lot of people are skipping it then the volunteers should look more deeply into it, or the moderators can be consulted to investigate, and take corrective steps.
+
 
 \bigskip
 
-The app aims to satisfy the need of automatic content moderation in various Community Platforms by adding features to enhance audio quality, convert to text, abusive content filters, associates tags based on the broad topic/theme( and subtopics having to rank) the audio belongs to and thus, to organize audios collected via the app into issues and enable better tracking of the status of each.
+The app aims to satisfy the need of automatic content moderation in various Community Platforms by adding features like abusive content filters, Popularity Index, associates tags based on the broad topic/theme( and subtopics having to rank) the audio belongs to and thus, to organize audios collected via the app into issues and enable better tracking of the status of each.
 
-\pagebreak
+
+\section{Related Work}
+    \begin{itemize}
+        \item Some social media like \textbf{Facebook} have worked on a method of content moderation known as \textbf{User Generated Censorship}. This method basically involves the users setting the flag or giving up/down votes to a post based on which an army of moderators block the content if found inappropriate. Due to lack of human force, the army is also supplemented by AI. This method has failed many times when someone uses a script/bot to automate the down-voting of a post in order to suppress some specific content. 
+        
+        \textit\underline{{Eg. Suppressing of J30Strike news on Facebook.}}
+        
+        \item \textbf{Slashdot}, a news and commentary site dedicated to technology issues, uses \textbf{Distributed Moderation System} which is an extension of \textit{User Generated Censorship} in which the weightage of the votes of users depend on their points which in turn depends on their previous comment/post history. Apart from this, it also has paid moderators who have unlimited moderation points. This turned out to be much better than \textit{User Generated Censorship}.
+        
+        \item \textbf{YouTube} has been dabbling with a similar community-based moderation system. Called \textbf{“YouTube Heroes,”} it empowers an elite group of users to police the site and help weed out the flood of horrific videos that you can imagine gets uploaded every second to the popular platform
+        
+        \item \textbf{YouNow}, a social live-streaming platform that’s primarily targeted at teens, has a fairly robust content moderation system. The site also employs proprietary technology to filter out such content–both videos flagged by users as well as those detected via its algorithmic system. It does that partly by analyzing comments in real time, which helps detect content that should be flagged.
+        
+        \item \textbf{Instagram} too is known for its heavy-handed content moderation, via such methods as \textbf{blocking the hashtags} for groups and communities that share potentially harmful content. Through this method, it has successfully blocked content that promotes eating disorders. How Instagram decides which hashtags to block remains a mystery. This is something many social media researchers have looked into, but given that hashtags are a prime way for users to connect, these blocks help reduce the flood of potentially abusive content.
+        
+    \end{itemize}
+
+
 \section{Approach to the project}
+<<<<<<< HEAD
     The overall approach is to provide the content recored by the user group over IVR to the community representatives (voluenteers) who pass the relevant audios to the content moderators. These content moderators do the selection and ranking of the content based on various factors such as biasedness of the content, it's political impact etc. The overall ranking of the content is determined with the help on a ranking algorithm. Then the content finally been published is available to the user on demand. Then based on the lifetime of the content, a mathematical measure called Popularity Index of content is determined through which the community representatives get to know the need of user group and then refine the content accordingly. To ensure the efficient working of the volunteers, they are given scores based on their work which in turn determines the incentive that they get for their work.
 
         \begin{itemize}
 			\item Collection of Content
+=======
+    The overall approach is to provide the content recorded by the user group over IVR to the community representatives (volunteers) who pass the relevant audios to the content moderators. These content moderators do the selection and ranking of the content based on various factors such as biasedness of the content, it's political impact etc. The overall ranking of the content is determined with the help on a ranking algorithm. Then the content finally been published is available to the user on demand. Then based on the lifetime of the content, a mathematical measure called Popularity Index of content is determined through which the community representatives get to know the need of user group and then refine the content accordingly. To ensure the efficient working of the volunteers, they are given scores based on their work which in turn determines the incentive that they get for their work.
+
+        \begin{itemize}
+			\item \textbf{\underline{Collection of Content}}
+>>>>>>> 32a1f8532a8b90c0cc9e7093be2a5772a7a079f0
 
 
 			We use an IVR (Interactive Voice Response) to get audio content from the user group. Interactive Voice Response (IVR) is an automated telephony system that interacts with callers, gathers information and routes calls to the appropriate recipient. The user gives a missed call to a number and the the computer calls back the user asap and then the user can speak about the content and the system records it.
 
 
+<<<<<<< HEAD
 			\item Moderation of Content
 
 
 			The process of moderation is decentralized in order to make it's working more efficient. It consists of two lavels of decentralizartion - Community Representatives (Volunteers) and Content Moderators.
+=======
+			\item \textbf{\underline{Moderation of Content}}
+
+
+			The process of moderation is decentralized in order to make it's working more efficient. It consists of two levels of decentralization - Community Representatives (Volunteers) and Content Moderators.
+>>>>>>> 32a1f8532a8b90c0cc9e7093be2a5772a7a079f0
 
 
 			\begin{enumerate}
@@ -129,6 +185,7 @@ The app aims to satisfy the need of automatic content moderation in various Comm
 
 			Moderator looks at the contents passed on by community representatives. They basically perform following two tasks namely - selection of content and ranking of content. They do the selection based on various factors such as biasedness of the content, it's political impact etc. Accordingly they reject the contents that are not suitable to be published. Then among the contents which are to be published, they rank them based on their understanding. The overall ranking of the content is determined with the help on a ranking algorithm which takes into account the ranks given to a content by each content moderator. 
 			\end{enumerate}
+<<<<<<< HEAD
 
 
 			\item Publishing Content
@@ -150,8 +207,62 @@ The app aims to satisfy the need of automatic content moderation in various Comm
 
 
 		\end{itemize}
+=======
+>>>>>>> 32a1f8532a8b90c0cc9e7093be2a5772a7a079f0
 
 
+			\item \textbf{\underline{Publishing Content}}
+
+
+			The content which passed the moderation test are published in order of their ranking. The user can listen to content on demand, according to their preference. The user response i.e. whether a user listens to or skip a content is recorded and this information is used in the next step (Popularity Index).
+
+\bigskip
+			\item \textbf{\underline{Content Popularity Index}}
+
+
+			Based on the information of lifetime of the content viz-a-viz whether people are listening to the content or skipping it etc, a mathematical measure of popularity of content called Popularity Index is calculated. Based on the measure of popularity indices of contents of a particular topics, volunteers determine whether user likes to listen about the topic or not. This helps to get the information about the demands of user group and suggests volunteers to prefer contents on certain topics over the others.
+
+
+			\item \textbf{\underline{Scoring System for Volunteers}}
+
+
+			It might happen that volunteers don't work efficiently and just randomly passes the content to content moderators. In order to check this, sometimes randomly some contents are sent both to volunteers and content moderators. If the decision of a volunteer about a content is same as the decision taken by the moderator, his/her score increases or else the score decreases. This is done with the help of a scoring algorithm. This score in turn decides the incentive that the volunteer gets for his/her work. So, in order to increase his/her incentive, the volunteer will try to increase his/her score and hence will work more efficiently.
+
+
+		\end{itemize}
+
+	\section{Future work and Other directions}	
+		\subsection{Future work}
+		\begin{itemize}
+		    \item 
+	
+			We will look for devising the ranking algorithm	which determines the overall ranking of the content taking into account the ranks given to a content by each content moderator.
+			
+			\item We will also to add certain features to our app by which the stories contributed by the community reporter are better organized based on the topics of the content.
+			
+			\item We will also look into some recent techniques for the scoring algorithm and Popularity Index which will be the major tools to maintain the loopholes in the system. 
+			
+			\item We will also consider using more efficient vocabulary representation as compared to one hot encoding because vocabulary in this case would be very large.
+			
+		\end{itemize}				
+		\subsection{Other Directions}
+		\begin{itemize}
+		    \item Audio Enhancement
+                \begin{enumerate}
+                \item We also want to address the problem of poor audio quality. So we will try to bring in methods in the app to enhance the poor-quality audios.
+                    \item We will use digital sampling to reconstruct the audio as much as possible.
+                    \item We sample at least twice as fast as the highest frequency we want to record so that we can use Nyquist theorem perfectly reconstruct the original sound wave from the spaced-out samples.
+                \end{enumerate} 
+                
+            \item Speech Recognition and Automatic abuse filtering
+            \begin{enumerate}
+                \item The user is asked to choose one of the provided languages so that it helps us to use a pre-trained neural network to convert audio to text.
+                \item We will be using APIs like Watson speech to text or Google speech API for converting the audio to text.
+                \item Depending on the abusive words in the language, we segregate the audios into abusive tolerable or abusive intolerable.
+            \end{enumerate}
+                
+		\end{itemize}
+		
 	\section{Budget and duration}	
 		\subsection{Budget}
 			No budget is required for this project.			
@@ -166,18 +277,49 @@ The app aims to satisfy the need of automatic content moderation in various Comm
 	\begin{thebibliography}{1}
 	
     \bibitem{}
-    Design Lessons from Creating a Mobile Based Community Media Platform in Rural India
-    \textit{Aparna
-Moitra *, Vishnupriya Das **, Gram Vaani team **, Archna Kumar *, Aaditeshwar Seth **}
+    
+    {Aparna
+Moitra , Vishnupriya Das, Gram Vaani team, Archna Kumar , Aaditeshwar Seth}\textit{Design Lessons from Creating a Mobile Based Community Media Platform in Rural India, Published in Proceedings of the Conference on Information
+and Communication Technologies and Development on June 3 2016.}
 
     \bibitem{}
-    Reality Reporting and Moderation Apps for Community Reporters in Rural Areas
-    \textit{Mridu Atray, Aaditeshwar Seth}
+    {Mridu Atray, Aaditeshwar Seth}
+    \textit{Reality Reporting and Moderation Apps for Community Reporters in Rural Areas, M.Tech Thesis submitted by Mridu Atray under supervision of Prof. Aaditeshwar Seth in July 2013.}
     
     \bibitem{}
-    Elo rating system
-    \textit{\href{https://en.wikipedia.org/wiki/Elo_rating_system}{https://en.wikipedia.org/wiki/Elo_rating_system}}
+    {Chris Peterson}
+    \textit{A Brief Guide To User-Generated Censorship, Published on Jul.22, 2013, under general.}
+    
+    \bibitem{}
+    {Cliff Lampe, Paul Resnick}
+    \textit{Slash(dot) and Burn: Distributed Moderation in a Large Online Conversation Space, In Proceedings of ACM Computer Human Interaction Conference 2004, Vienna Austria.}
 
+\bibitem{}
+    {Ceren Budak,
+Sharad Goel,
+Justin M. Rao} \textit{ Fair and Balanced?
+Quantifying Media Bias through
+Crowdsourced Content Analysis, Published by Oxford University Press on behalf of the American Association for Public Opinion Research on 01 April 2016.}
+    
+    \bibitem{}
+    Haewoon Kwak, Changhyun Lee, Hosung Park, and Sue Moon
+    \textit{What is Twitter, a Social Network or a News Media?, Published in Proceedings of the 19th international conference on World wide web
+Pages 591-600 Raleigh, North Carolina, USA — April 26 - 30, 2010. }
+    
+        \bibitem{}
+    Engin Bozdag
+    \textit{Bias in algorithmic filtering and personalization, Ethics and Information Technology Volume 15 Issue 3, September 2013 Pages 209-227.}
 
+\bibitem{}
+    Natali Ruchansky,
+Sungyong Seo,
+Yan Liu
+    \textit{CSI: A Hybrid Deep Model for Fake News Detection, In Proceedings of the 26th ACM International Conference on Information and Knowledge Management (CIKM) September 2017.}
+
+\bibitem{}
+Roja Bandari,
+Sitaram Asur,
+Bernardo A. Huberman
+    \textit{The Pulse of News in Social Media: Forecasting Popularity, Proceedings of the Sixth International AAAI Conference on Weblogs and Social Media.}
 	\end{thebibliography}
 \end{document}
